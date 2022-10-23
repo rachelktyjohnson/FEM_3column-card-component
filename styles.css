@@ -1,7 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@300;400&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  background: hsl(0deg, 0%, 95%);
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+body main {
+  max-width: 330px;
+  margin: 50px 0;
+}
+@media (min-width: 600px) {
+  body main {
+    max-width: 920px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+body main .card {
+  padding: 50px;
+  color: white;
+  background: grey;
+}
+body main .card.sedan {
+  background: hsl(31deg, 77%, 52%);
+  border-radius: 10px 10px 0 0;
+}
+body main .card.sedan button {
+  color: hsl(31deg, 77%, 52%);
+}
+@media (min-width: 600px) {
+  body main .card.sedan {
+    border-radius: 10px 0 0 10px;
+  }
+}
+body main .card.suv {
+  background: hsl(184deg, 100%, 22%);
+}
+body main .card.suv button {
+  color: hsl(184deg, 100%, 22%);
+}
+body main .card.luxury {
+  background: hsl(179deg, 100%, 13%);
+  border-radius: 0 0 10px 10px;
+}
+body main .card.luxury button {
+  color: hsl(179deg, 100%, 13%);
+}
+@media (min-width: 600px) {
+  body main .card.luxury {
+    border-radius: 0 10px 10px 0;
+  }
+}
+body main .card h1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+body main .card p {
+  font-size: 0.95rem;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+@media (min-width: 600px) {
+  body main .card p {
+    margin-bottom: 90px;
+  }
+}
+body main .card button {
+  font-weight: 400;
+  border-radius: 25px;
+  background: white;
+  color: grey;
+  padding: 10px 25px;
+  border: 1px white solid;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+body main .card button:hover {
+  background: none;
+  color: hsla(0deg, 0%, 100%, 0.75);
 }
 
 /*# sourceMappingURL=styles.css.map */
